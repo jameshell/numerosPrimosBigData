@@ -19,8 +19,11 @@ public class BigDataNumerosPrimos {
      
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner input= new Scanner(System.in);
-        int i=input.nextInt();
+       contadorNumPrimos(10);
+    }
+    
+  public static void contadorNumPrimos(int i){
+     
         int contador=0;
         int cantNumPrimos=0;
         while(contador<i){
@@ -30,8 +33,7 @@ public class BigDataNumerosPrimos {
             contador++;
         }
         System.out.println("Cantidad de numeros primos desde 0 hasta "+i+" es:"+""+cantNumPrimos);
-    }
-    
+  }
     
   public static boolean isPrime(int n) {
     //Se prueba si es multiplo de 2
